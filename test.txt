@@ -1,0 +1,15 @@
+Azure AD Authentication Methods: Test Azure AD authentication method for Azure SQL Managed Instance.
+SQL Authentication: Verify connection using SQL authentication.
+Database-Level Permissions: Ensure Power BI can only access data it has permissions for.
+Oracle Client & Gateway Configuration: Ensure the Oracle client software is correctly installed and configured on the On-Premises Data Gateway machine, and the gateway can connect to Oracle.
+Oracle Database Authentication: Verify connection using standard Oracle database username/password authentication.
+Data Loading & Refresh (Power BI Desktop): Verify successful data import for a small dataset.
+Data Type Integrity;   Ensure data types are correctly inferred and imported.
+Query Folding: check if query folding is working where expected.
+Relationship Creation using Import mode: Verify that relationships can be created (or are auto-detected correctly) between imported tables.
+Calculated Columns & Measures (DAX): Test the creation and functionality of DAX calculated columns and measures on imported data.
+Basic Report Rendering: Create a simple report with a few visuals to ensure they render correctly with imported data.
+Publishing & Service Connectivity (Power BI Service): Verify that a Power BI Desktop file using Import Mode can be successfully published to the Power BI Service.
+Scheduled Refresh Setup & Execution: Test setting up and running a scheduled refresh for the imported dataset in the Power BI Service.
+Complex Queries/Native SQL: Test importing data using a native SQL query in the "Advanced options" of the connector. Verify it executes correctly and imports the expected data. Note that using a native SQL query is often a point where query folding stops for subsequent Power Query steps.
+Special Characters: est with table/column names and data containing special characters, different languages, or reserved words to ensure proper handling.
